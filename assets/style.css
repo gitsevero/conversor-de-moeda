@@ -11,16 +11,17 @@ body {
     align-items: center;
     background-color: rgba(0, 255, 255, 0.153);
     width: 100vw;
-    min-height: 100vh;
+    min-height: 60vh;
+    font-family: 'Roboto Mono', monospace;
+
 }
 
 
-
-
-
 .title.conversor {
-    font-size: 2rem;
+    margin-bottom: 5rem;
+    font-size: 2.2rem;
     font-weight: 600;
+
 }
 
 .input.conversor {
@@ -34,14 +35,7 @@ body {
 
 }
 
-input {
 
-    text-align: center;
-    width: 40%;
-    border: none;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.942);
-}
 
 
 .button {
@@ -59,12 +53,14 @@ input {
 }
 
 .moeda {
-    width: 64%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    width: 100%;
+    justify-content: center;
+    margin: .2rem 0 .2rem;
 
 }
+
+
 
 .moeda.submit {
     width: 100%;
@@ -102,4 +98,30 @@ input {
 
 select {
     width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    .input.conversor {
+        width: 95%;
+
+    }
+
+    .moeda.cotacao,
+    .moeda.converted {
+        min-width: 70%;
+
+    }
+
+    #contacao,
+    #converted {
+        min-width: 50%;
+    }
+
+    h1.title.conversor {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
 }
